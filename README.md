@@ -1,6 +1,19 @@
 No puts debugging
 =================
 
+puts/p
+------
+Just being slightly more verbose. `p` is a good reason to avoid 
+[puts x.inspect](https://ruby-doc.org/core-2.4.0/Kernel.html#method-i-p)
+
+Might improve understanding of the source code.
+
+IRB
+---
+Executable via `binding`
+Since [ruby 2.4.0, 2016-12-25](https://www.ruby-lang.org/en/news/2016/12/25/ruby-2-4-0-released/) and
+actually quite a simple <3
+[see the commit](https://github.com/ruby/ruby/commit/493e48897421d176a8faf0f0820323d79ecdf94a)
 
 Integrated tracer
 -----------------
@@ -16,7 +29,6 @@ No code change approach
 #0:trace_simple.rb:2:Object:-:   puts "boo"
 boo
 #0:trace_simple.rb:3:Object:<: end
-
 ```
 
 Added code - support block syntax
