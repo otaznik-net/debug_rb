@@ -102,7 +102,7 @@ fi
 and a vim command like
 ```
 execute "!my_bug.bash " .shellescape(expand('%'), 1).":".shellescape(line('.'), 1)
-"~/.vimrc
+" put following to your ~/.vimrc and then just call ":MyBug"
 :command MyBug execute "!my_bug.bash " .shellescape(expand('%'), 1).":".shellescape(line('.'), 1)
 ```
 
