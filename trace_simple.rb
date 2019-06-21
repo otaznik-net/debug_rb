@@ -1,4 +1,4 @@
-def boo
+def boo(a)
   puts "boo"
 end
-boo
+boo('t')
